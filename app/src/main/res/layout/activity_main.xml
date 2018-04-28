@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#236863"
+    tools:context="com.example.chris.mastermobiledemo2.MainActivity">
+
+    <ListView
+        android:id="@+id/movieListing"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="359dp"
+        android:layout_height="488dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:background="#689c98" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="355dp"
+        android:layout_height="81dp"
+        android:layout_alignEnd="@+id/movieListing"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logod" />
+
+</RelativeLayout>

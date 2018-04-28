@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.mastermobiledemo2.MovieDetails">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logod" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/tableLayout1"
+        android:layout_width="375dp"
+        android:layout_height="249dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="364dp"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="Movie Details"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="serif"></TextView>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Movie Title:"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                app:layout_constraintRight_toRightOf="parent"></TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMovieGenre"
+                android:layout_width="4dp"
+                android:text="Movie Genre"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/movieGenre"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                app:layout_constraintRight_toRightOf="parent"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMovieYear"
+                android:layout_width="10dp"
+                android:text="Movie Year"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/movieYear"
+                android:gravity="center_horizontal"
+                android:text=""
+                app:layout_constraintRight_toRightOf="parent"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMovieDirector"
+                android:layout_width="10dp"
+                android:text="Movie Director(s):"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/movieDirector"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                app:layout_constraintRight_toRightOf="parent"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMovieCast"
+                android:text="Movie Casts:"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+            <TextView
+                android:id="@+id/movieCast"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                app:layout_constraintRight_toRightOf="parent"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMovieNotes"
+                android:text="Movie Notes:"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/movieNotes"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""></TextView>
+
+        </TableRow>
+
+        <!-- <TableRow
+            android:id="@+id/tableRow5a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textRunningTimes"
+                android:text="Movie RunningTimes:"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/movieRunningTimes"
+                android:gravity="center_horizontal"
+                android:text=""></TextView>
+
+        </TableRow>-->
+
+    </TableLayout>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/textFeatured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured Movies"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/textFeatured"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView4"
+        android:layout_width="107dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/film1"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/textFeatured"
+        app:layout_constraintRight_toRightOf="@id/imageView6"
+        app:layout_constraintLeft_toLeftOf="@id/imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView5"
+        android:layout_width="107dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/simon"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="104dp"
+        android:layout_height="132dp"
+        app:srcCompat="@drawable/tombraider"
+        app:layout_constraintTop_toBottomOf="@id/textFeatured"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textFeatured"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:background="#236863"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+
+</android.support.constraint.ConstraintLayout>
